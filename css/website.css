@@ -1,6 +1,31 @@
 #contact{
     background-color: #eee;
 }
+#snack{
+    background-size: 28%;
+    background-repeat: no-repeat;
+    background-image: url(../img/Fotos/bitterbal.png);
+    padding: 4rem 0;
+    background-color: #ddd;
+}
 #copyright{
     background-color: #ccc;
+}
+
+.mastheadfotos {
+    padding-top: 15rem;
+    padding-bottom: calc(20rem - 72px);
+    background-image: url("../img/Fotos/achtergond.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+}
+.mastheadsnack {
+    padding-top: 15rem;
+    padding-bottom: calc(20rem - 72px);
+    background-image: url("../img/Fotos/DSC05495.jpg");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
 }
