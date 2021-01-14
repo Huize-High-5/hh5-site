@@ -7,7 +7,10 @@ $quote = $_POST["quote"];
 $db = mysqli_connect("localhost","huizehigh5_quoteform","~6ClA9s^)NjW","huizehigh5_quotes")or die('Er kan geen verbinding met de database worden gemaakt.');
 
 $sql = mysqli_query($db,"INSERT INTO quotes (ID,naam,quote,tijd) VALUES ('$id','$naam','$quote','".time()."')");
-
-echo "succes!";
-echo "<meta http-equiv=REFRESH CONTENT=0;url='huizehighfive.calslaan.nl/quotes'>";
+if (!$sql) {
+    die ("invalid query" . mysql_error());
+} else {
+    echo "succes!";
+    echo "<meta http-equiv=REFRESH CONTENT=0;url='quotes'>";
+}
 ?>
