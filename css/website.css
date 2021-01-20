@@ -29,3 +29,21 @@
     background-attachment: scroll;
     background-size: cover;
 }
+
+
+#chips {
+    animation-name: floatingchips;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    position: fixed;
+    height: 100px;
+}
+#chips img{
+    height: 100%;
+}
+
+@keyframes floatingchips {
+    0% { left: 0; }
+    100%   { left: 100%; }
+}
