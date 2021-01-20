@@ -1,13 +1,9 @@
 <?php
+include('credentials.php');
 $id = "0";
 $naam = $_POST["naam"];
 $quote = $_POST["quote"];
 $sql = "INSERT INTO quotes (ID,naam,quote) VALUES ('$id','$naam','$quote')";
-
-$servername = "localhost";
-$username = "huizehigh5_quoteform";
-$password = "~6ClA9s^)NjW";
-$table = "huizehigh5_quotes";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $table);
