@@ -17,5 +17,5 @@ if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
 echo "Connected successfully";
-//echo "<meta http-equiv=REFRESH CONTENT=0;url='quotes'>";
+//echo "<meta http-equiv=REFRESH CONTENT=0;url='quotes.html'>";
 ?> 
