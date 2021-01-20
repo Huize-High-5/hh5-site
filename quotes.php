@@ -86,6 +86,10 @@
 <section class="container" id="quotelist">
     <?php
     // Create connection
+    $servername = "localhost";
+$username = "huizehigh5_quoteform";
+$password = "~6ClA9s^)NjW";
+$table = "huizehigh5_quotes";
 $conn = new mysqli($servername, $username, $password, $table);
 
 // Check connection
