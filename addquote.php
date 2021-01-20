@@ -1,17 +1,21 @@
 <?php
-echo "addquote";
-
+$table = "huizehigh5_quotes";
+//$sql = mysqli_query($db,"INSERT INTO quotes (ID,naam,quote,tijd) VALUES ('$id','$naam','$quote','".time()."')");
 $id = 0;
 $naam = $_POST["naam"];
 $quote = $_POST["quote"];
-$db = mysqli_connect("localhost","huizehigh5_quoteform","~6ClA9s^)NjW","huizehigh5_quotes")or die('Er kan geen verbinding met de database worden gemaakt.');
 
-$sql = mysqli_query($db,"INSERT INTO quotes (ID,naam,quote,tijd) VALUES ('$id','$naam','$quote','".time()."')");
-if (!$sql) {
-    echo "invalid query" . mysql_error();
-    die();
-} else {
-    echo "succes!";
-    echo "<meta http-equiv=REFRESH CONTENT=0;url='quotes'>";
+$servername = "localhost";
+$username = "huizehigh5_quoteform";
+$password = "~6ClA9s^)NjW";
+
+// Create connection
+$conn = new mysqli($servername, $username, $password);
+
+// Check connection
+if ($conn->connect_error) {
+  die("Connection failed: " . $conn->connect_error);
 }
-?>
+echo "Connected successfully";
+//echo "<meta http-equiv=REFRESH CONTENT=0;url='quotes.html'>";
+?> 
