@@ -100,7 +100,7 @@ if ($conn->connect_error) {
 // create table
 echo '<table class="table">';
 echo '<thead><tr><td>Wanneer</td><td>Wie</td><td>Wat</td></tr></thead>';
-$sql = "SELECT * FROM quotes ORDER BY Tijd";
+$sql = "SELECT * FROM quotes ORDER BY Tijd DESC";
 $result = $conn->query($sql);
 echo '<tbody>';
 while($row = $result->fetch_assoc()) {

@@ -2,7 +2,8 @@
     background-color: #eee;
 }
 #snack{
-    background-size: 28%;
+    background-size: 40%;
+    background-position: bottom right;
     background-repeat: no-repeat;
     background-image: url(../img/Fotos/bitterbal.png);
     padding: 4rem 0;

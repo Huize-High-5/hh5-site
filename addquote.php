@@ -24,6 +24,5 @@ if ($conn->query($sql) === TRUE) {
   }
 
 echo "Connected successfully";
-$conn->close();
-//echo "<meta http-equiv=REFRESH CONTENT=0;url='quotes.php'>";
+echo "<meta http-equiv=REFRESH CONTENT=0;url='quotes.php'>";
 ?> 
