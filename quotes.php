@@ -100,7 +100,7 @@ if ($conn->connect_error) {
 // create table
 echo '<table>';
 echo '<tr><td>Wanneer</td><td>Wie</td><td>Wat</td></tr>';
-$sql = "SELECT * FROM quotes ORDER BY timestamp";
+$sql = "SELECT * FROM quotes ORDER BY Tijd";
 $result = $conn->query($sql);
 while($row = $result->fetch_assoc()) {
     echo '<tr><td>'.$row['Tijd'].'</td><td>'.$row['Naam'].'</td><td>'.$row['Quote'].'</td></tr>';
