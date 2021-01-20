@@ -98,13 +98,15 @@ if ($conn->connect_error) {
 }
 
 // create table
-echo '<table>';
-echo '<tr><td>Wanneer</td><td>Wie</td><td>Wat</td></tr>';
+echo '<table class="table">';
+echo '<thead><tr><td>Wanneer</td><td>Wie</td><td>Wat</td></tr></thead>';
 $sql = "SELECT * FROM quotes ORDER BY Tijd";
 $result = $conn->query($sql);
+echo '<tbody>';
 while($row = $result->fetch_assoc()) {
     echo '<tr><td>'.$row['Tijd'].'</td><td>'.$row['Naam'].'</td><td>'.$row['Quote'].'</td></tr>';
 }
+echo '</tbody>';
 echo '</table>';
   ?>
 </section>
