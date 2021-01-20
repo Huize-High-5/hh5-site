@@ -1,5 +1,5 @@
 <?php
-$id = 0;
+$id = '0';
 $naam = $_POST["naam"];
 $quote = $_POST["quote"];
 $sql = "INSERT INTO quotes (ID,naam,quote,tijd) VALUES ('$id','$naam','$quote','".time()."')";
