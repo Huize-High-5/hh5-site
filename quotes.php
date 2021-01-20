@@ -87,10 +87,10 @@
     <?php
     // Create connection
     $servername = "localhost";
-$username = "huizehigh5_quoteform";
-$password = "~6ClA9s^)NjW";
-$table = "huizehigh5_quotes";
-$conn = new mysqli($servername, $username, $password, $table);
+    $username = "huizehigh5_quoteform";
+    $password = "~6ClA9s^)NjW";
+    $table = "huizehigh5_quotes";
+    $conn = new mysqli($servername, $username, $password, $table);
 
 // Check connection
 if ($conn->connect_error) {
