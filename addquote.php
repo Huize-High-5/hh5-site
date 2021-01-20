@@ -2,7 +2,7 @@
 $id = "0";
 $naam = $_POST["naam"];
 $quote = $_POST["quote"];
-$sql = "INSERT INTO quotes (ID,naam,quote,tijd) VALUES ('$id','$naam','$quote',CURRENT_TIMESTAMP)";
+$sql = "INSERT INTO quotes (ID,naam,quote) VALUES ('$id','$naam','$quote')";
 
 $servername = "localhost";
 $username = "huizehigh5_quoteform";
