@@ -12,4 +12,4 @@ deployment:
     - /bin/cp favicon.png $DEPLOYPATH
     - /bin/cp fotos.html $DEPLOYPATH
     - /bin/cp index.html $DEPLOYPATH
-    - /bin/cp quotes.html $DEPLOYPATH 
+    - /bin/cp quotes.php $DEPLOYPATH 

@@ -55,7 +55,7 @@
         </div>
     </div>
 </header>
-    <section class="container" id="quoteform">
+<section class="container" id="quoteform">
     <form method="post" action="addquote.php" >
         <div class="form-group">
             <label for="naamselect">Naam</label>
@@ -72,6 +72,7 @@
               <option>Sop</option>
               <option>Sab</option>
               <option>Nik</option>
+              <option>Anoniem</option>
             </select>
           </div>
           <div class="form-group">
@@ -80,6 +81,27 @@
           </div>
           <button type="submit" class="btn btn-primary">Toevoegen</button>
     </form>
+</section>
+
+<section class="container" id="quotelist">
+    <?php
+    // Create connection
+$conn = new mysqli($servername, $username, $password, $table);
+
+// Check connection
+if ($conn->connect_error) {
+  die("Connection failed: " . $conn->connect_error);
+}
+
+// create table
+echo '<table>';
+echo '<tr><td>Wanneer</td><td>Wie</td><td>Wat</td></tr>'
+$sql = "SELECT * FROM quotes ORDER BY timestamp"
+while($row = mysqli_fetch_array($sql)) {
+    echo '<tr><td>'.$row['Tijd'].'</td><td>'.$row['Naam'].'</td><td>'.$row['Quote'].'</td></tr>'
+}
+echo '</table>'
+  ?>
 </section>
 
 
