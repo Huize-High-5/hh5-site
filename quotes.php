@@ -106,7 +106,7 @@ echo '<tbody>';
 while($row = $result->fetch_assoc()) {
     echo '<tr><td>'.$row['Tijd'].'</td><td>'.$row['Naam'].'</td><td>'.$row['Quote'].'</td></tr>';
 }
-echo '</tbody>'
+echo '</tbody>';
 echo '</table>';
   ?>
 </section>
