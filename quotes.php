@@ -97,7 +97,8 @@ if ($conn->connect_error) {
 echo '<table>';
 echo '<tr><td>Wanneer</td><td>Wie</td><td>Wat</td></tr>';
 $sql = "SELECT * FROM quotes ORDER BY timestamp";
-while($row = mysqli_fetch_array($sql)) {
+$result = $conn->query($sql);
+while($row = $result->fetch_assoc()) {
     echo '<tr><td>'.$row['Tijd'].'</td><td>'.$row['Naam'].'</td><td>'.$row['Quote'].'</td></tr>';
 }
 echo '</table>';
