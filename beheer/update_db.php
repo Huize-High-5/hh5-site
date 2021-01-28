@@ -10,7 +10,7 @@ if ($conn->connect_error) {
 }
 
 echo $_GET['ID'];
-$sql = "UPDATE quotes SET Zichtbaar = Zichtbaar + 1 WHERE quotes.ID = ".$_GET['ID'];
+$sql = "UPDATE quotes SET Zichtbaar = NOT Zichtbaar WHERE quotes.ID = ".$_GET['ID'];
 echo $sql;
 $result = $conn->query($sql);
 
