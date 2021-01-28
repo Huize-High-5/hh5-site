@@ -9,8 +9,8 @@ if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
 
-echo $_GET['Tijd'];
-$sql = "UPDATE quotes SET Zichtbaar = !Zichtbaar WHERE quotes.Tijd = ".$_GET['Tijd'];
+echo $_GET['ID'];
+$sql = "UPDATE quotes SET Zichtbaar = !Zichtbaar WHERE quotes.ID = ".$_GET['ID'];
 echo $sql;
 $result = $conn->query($sql);
 
