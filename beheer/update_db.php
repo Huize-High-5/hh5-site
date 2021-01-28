@@ -14,7 +14,7 @@ $sql = "UPDATE quotes SET Zichtbaar = !Zichtbaar WHERE quotes.ID = ".$_GET['ID']
 echo $sql;
 $result = $conn->query($sql);
 echo '<br />db aangepast <br />';
-echo "<meta http-equiv=REFRESH CONTENT=0;url='beheer/index.php'>";
+echo "<meta http-equiv=REFRESH CONTENT=0;url='index.php'>";
 
 
 ?>
