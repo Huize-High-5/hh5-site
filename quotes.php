@@ -60,19 +60,20 @@
         <div class="form-group">
             <label for="naamselect">Naam</label>
             <select class="form-control" id="naamselect" name="naam">
-              <option>--- Kies een huisgenoot ---</option>
-              <option>Fia</option>
-              <option>Thomaas</option>
-              <option>Bart</option>
-              <option>Job</option>
-              <option>Yer</option>
-              <option>Rukkie</option>
-              <option>Marty</option>
-              <option>Morty</option>
-              <option>Sop</option>
-              <option>Sab</option>
-              <option>Nik</option>
-              <option>Anoniem</option>
+              <option value="" disabled selected>--- Kies een huisgenoot ---</option>
+              <option value="Fia">Fia</option>
+              <option value="Thomaas">Thomaas</option>
+              <option value="Bart">Bart</option>
+              <option value="Job">Job</option>
+              <option vlaue="Meike">Meike</option>
+              <option value="Rukkie">Rukkie</option>
+              <option value="Marty">Marty</option>
+              <option value="Morty">Morty</option>
+              <option value="Sop">Sop</option>
+              <option value="Yer">Yer</option>
+              <option value="Sab">Sab</option>
+              <option value="Nik">Nik</option>
+              <option value="Anoniem">Anoniem</option>
             </select>
           </div>
           <div class="form-group">

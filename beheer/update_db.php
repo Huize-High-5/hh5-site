@@ -10,7 +10,7 @@ if ($conn->connect_error) {
 }
 
 echo $_GET['ID'];
-$sql = "UPDATE quotes SET Zichtbaar = !Zichtbaar WHERE quotes.ID = ".$_GET['ID'];
+$sql = "UPDATE quotes SET Zichtbaar = !Zichtbaar WHERE quotes.Tijd = ".$_GET['Tijd'];
 echo $sql;
 $result = $conn->query($sql);
 echo '<br />db aangepast <br />';
