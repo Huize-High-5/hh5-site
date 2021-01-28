@@ -2,7 +2,7 @@
 include('credentials.php');
 $naam = $_POST["naam"];
 $quote = $_POST["quote"];
-$sql = "INSERT INTO quotes (ID,naam,quote) VALUES ('$naam','$quote')";
+$sql = "INSERT INTO quotes (naam,quote) VALUES ('$naam','$quote')";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $table);
