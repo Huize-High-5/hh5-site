@@ -8,6 +8,7 @@ deployment:
     - /bin/cp -R js $DEPLOYPATH
     - /bin/cp -R scss $DEPLOYPATH
     - /bin/cp -R vendor $DEPLOYPATH
+    - /bin/cp -R beheer $DEPLOYPATH
     - /bin/cp addquote.php $DEPLOYPATH
     - /bin/cp favicon.png $DEPLOYPATH
     - /bin/cp fotos.html $DEPLOYPATH
