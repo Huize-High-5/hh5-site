@@ -17,8 +17,8 @@ $sql = "SELECT * FROM quotes ORDER BY Tijd DESC";
 $result = $conn->query($sql);
 echo '<tbody>';
 while($row = $result->fetch_assoc()) {
-    echo '<tr><td>'.$row['Tijd'].'</td><td>'.$row['Naam'].'</td><td>'.$row['Quote'].'</td><td><a href="update_db.php?ID='.$row['ID'].'">'.$row['Zichtbaar'].'</a></td><td></td></tr>';
-}
+    echo '<tr><td>'.$row['Tijd'].'</td><td>'.$row['Naam'].'</td><td>'.$row['Quote'].'</td><td><a href="update_db.php?ID='.$row['Tijd'].'">'.$row['Zichtbaar'].'</a></td><td></td></tr>';
+    }
 echo '</tbody>';
 echo '</table>';
 ?>
