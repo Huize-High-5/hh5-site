@@ -14,7 +14,7 @@ $sql = "UPDATE quotes SET Zichtbaar = Zichtbaar + 1 WHERE quotes.ID = ".$_GET['I
 echo $sql;
 $result = $conn->query($sql);
 
-if ($conn->query($sql) === TRUE) {
+if ($result === TRUE) {
     echo "New record created successfully";
   } else {
     echo "Error: " . $sql . "<br>" . $conn->error;
