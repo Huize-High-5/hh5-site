@@ -71,6 +71,7 @@
               <option value="Morty">Morty</option>
               <option value="Sop">Sop</option>
               <option value="Yer">Yer</option>
+              <option value = "Lucille">Lucile</option>
               <option value="Sab">Sab</option>
               <option value="Nik">Nik</option>
               <option value="Anoniem">Anoniem</option>
