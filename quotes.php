@@ -65,14 +65,16 @@
               <option value="Thomaas">Thomaas</option>
               <option value="Bart">Bart</option>
               <option value="Job">Job</option>
+              <option value="Tjerk">Tjcherque</option>
               <option vlaue="Meike">Meike</option>
               <option value="Rukkie">Rukkie</option>
               <option value="Marty">Marty</option>
               <option value="Morty">Morty</option>
               <option value="Sop">Sop</option>
               <option value="Yer">Yer</option>
-              <option value = "Lucille">Lucile</option>
+              <option value="Lucille">Lucile</option>
               <option value="Sab">Sab</option>
+              <option value="Kian">Kiki do u lo</option>
               <option value="Nik">Nik</option>
               <option value="Anoniem">Anoniem</option>
             </select>
