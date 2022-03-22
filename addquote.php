@@ -1,8 +1,12 @@
 <?php
 include('credentials.php');
 $naam = $_POST["naam"];
+$anderenaam = $_POST["naam_anders"];
 $quote = $_POST["quote"];
-$sql = "INSERT INTO quotes (naam,quote) VALUES ('$naam','$quote')";
+
+$quotenaam = $naam == "Anders" ? $anderenaam : $naam;
+
+$sql = "INSERT INTO quotes (naam,quote) VALUES ('$quotenaam','$quote')";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $table);
