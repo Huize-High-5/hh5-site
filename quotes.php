@@ -59,7 +59,7 @@
     <form method="post" action="addquote.php" >
         <div class="form-group">
             <label for="naamselect">Naam</label>
-            <select class="form-control" id="naamselect" name="naam">
+            <select class="form-control" id="naamselect" name="naam" onchange="otherTextBox()">
               <option value="" disabled selected>--- Kies een huisgenoot ---</option>
               <option value="Fia">Fia</option>
               <option value="Thomaas">Thomaas</option>
@@ -68,22 +68,29 @@
               <option value="Tjerk">Tjcherque</option>
               <option vlaue="Meike">Meike</option>
               <option value="Rukkie">Rukkie</option>
+              <option value="Valou">Valou</option>
               <option value="Marty">Marty</option>
+              <option value="Loulou">Loulou</option>
               <option value="Morty">Morty</option>
               <option value="Sop">Sop</option>
               <option value="Yer">Yer</option>
-              <option value="Lucille">Lucile</option>
+              <option value="Lucille">Lucille</option>
               <option value="Sab">Sab</option>
               <option value="Kian">Kiki do u lo</option>
               <option value="Nik">Nik</option>
               <option value="Anoniem">Anoniem</option>
+              <option value="Anders">Anders...</option>
             </select>
-          </div>
-          <div class="form-group">
+        </div>
+        <div class="form-group" id="anderenaam" style="display: none">
+            <label for="naamtextbox">Naam</label>
+            <textarea class="form-control" id="naamtextbox" rows="1" name="naam"></textarea>
+        </div>
+        <div class="form-group">
             <label for="quotetext">Quote</label>
             <textarea class="form-control" id="quotetext" rows="1" name="quote"></textarea>
-          </div>
-          <button type="submit" class="btn btn-primary">Toevoegen</button>
+        </div>
+        <button type="submit" class="btn btn-primary">Toevoegen</button>
     </form>
 </section>
 
@@ -132,6 +139,13 @@ echo '</table>';
 
 <!-- Custom scripts for this template -->
 <script src="js/creative.min.js"></script>
+
+<script>
+    function otherTextBox() {
+        var dropdownvalue = document.getElementById("naamselect");
+        var textbox = documet.getElementById("anderenaam")
+        textbox.style.display = dropdownvalue.value == Anders ? "block" : "none";
+    }
 
 </body>
 
