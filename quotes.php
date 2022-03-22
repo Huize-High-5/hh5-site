@@ -84,7 +84,7 @@
         </div>
         <div class="form-group" id="anderenaam" style="display: none">
             <label for="naamtextbox">Naam</label>
-            <textarea class="form-control" id="naamtextbox" rows="1" name="naam"></textarea>
+            <textarea class="form-control" id="naamtextbox" rows="1" name="naam_anders"></textarea>
         </div>
         <div class="form-group">
             <label for="quotetext">Quote</label>
@@ -143,7 +143,7 @@ echo '</table>';
 <script>
     function otherTextBox() {
         var dropdownvalue = document.getElementById("naamselect");
-        var textbox = documet.getElementById("anderenaam");
+        var textbox = document.getElementById("anderenaam");
         textbox.style.display = dropdownvalue.value == "Anders" ? "block" : "none";
     }
 </script>
