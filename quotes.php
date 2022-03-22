@@ -144,7 +144,7 @@ echo '</table>';
     function otherTextBox() {
         var dropdownvalue = document.getElementById("naamselect");
         var textbox = documet.getElementById("anderenaam");
-        textbox.style.display = dropdownvalue.value == Anders ? "block" : "none";
+        textbox.style.display = dropdownvalue.value == "Anders" ? "block" : "none";
     }
 </script>
 
